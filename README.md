@@ -1,8 +1,8 @@
 # Leonardita
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/leonardita`. To experiment with that code, run `bin/console` for an interactive prompt.
+[![Ruby](https://github.com/iOSLabUNAM/leonardita/actions/workflows/main.yml/badge.svg)](https://github.com/iOSLabUNAM/leonardita/actions/workflows/main.yml)
 
-TODO: Delete this and the text above, and describe your gem
+
 
 ## Installation
 
@@ -22,7 +22,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+
+### DCB Asesorias
+```ruby
+mentoring_schedule = Leonardita.mentoring
+```
+
+### DCB Talleres
+```ruby
+workshops_shcedule = Leonardita.workshops
+```
 
 ## Development
 

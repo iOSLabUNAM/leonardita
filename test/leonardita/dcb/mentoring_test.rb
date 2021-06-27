@@ -4,14 +4,14 @@ require "test_helper"
 
 module Leonardita
   module Dcb
-    class TalleresTest < Minitest::Test
+    class MentoringTest < Minitest::Test
       def scrapper
-        @scrapper = Talleres.new
+        @scrapper = Mentoring.new
       end
 
       def test_scrape_data
-        VCR.use_cassette("talleres") do
-          assert_equal 24, scrapper.data.count
+        VCR.use_cassette("asseorias") do
+          assert_equal 42, scrapper.data.count
         end
       end
     end
