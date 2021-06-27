@@ -2,9 +2,9 @@
 
 module Leonardita
   module Dcb
-    class Asesorias < ScheduleScrapper
+    class Talleres < ScheduleScrapper
       def initialize
-        super("http://dcb.ingenieria.unam.mx/index.php/asesorias/")
+        super("http://dcb.ingenieria.unam.mx/index.php/talleres/")
       end
     end
   end
