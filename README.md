@@ -2,7 +2,7 @@
 
 [![Ruby](https://github.com/iOSLabUNAM/leonardita/actions/workflows/main.yml/badge.svg)](https://github.com/iOSLabUNAM/leonardita/actions/workflows/main.yml)
 
-
+Scraping Tools for the Enginering Faculty sites
 
 ## Installation
 
@@ -22,6 +22,7 @@ Or install it yourself as:
 
 ## Usage
 
+To use you only need to call the methods in the module
 
 ### DCB Asesorias
 ```ruby
@@ -33,6 +34,21 @@ mentoring_schedule = Leonardita.mentoring
 workshops_shcedule = Leonardita.workshops
 ```
 
+You could also access the Scrappers directly by calling
+
+### DCB Asesorias
+```ruby
+scrapper = Leonardita::Dcb::Mentoring.new
+scrapper.raw_data
+scrapper.data
+```
+
+### DCB Asesorias
+```ruby
+scrapper = Leonardita::Dcb::Workshops.new
+scrapper.raw_data
+scrapper.data
+```
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
@@ -41,7 +57,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/leonardita. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/leonardita/blob/master/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/iOSLabUNAM/leonardita. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/iOSLabUNAM/leonardita/blob/master/CODE_OF_CONDUCT.md).
 
 ## License
 
@@ -49,4 +65,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the Leonardita project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/leonardita/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the Leonardita project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/iOSLabUNAM/leonardita/blob/master/CODE_OF_CONDUCT.md).
