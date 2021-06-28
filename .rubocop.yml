@@ -19,6 +19,8 @@ Metrics/AbcSize:
 
 Metrics/MethodLength:
   Max: 15
+  Exclude:
+    - test/leonardita/dcb/mentoring_test.rb
 
 Style/Documentation:
   Enabled: false
